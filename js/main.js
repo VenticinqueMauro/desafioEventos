@@ -34,7 +34,6 @@ btnReset.addEventListener("click", () => {
     window.location.reload() // Si se quita esta funcion, al volver a rellenar los campos ya no se ven reflejados en `respuestas` ya que el codigo solo se ejecuta una sola vez. Por eso considere necesario recargar la web hasta conocer otra posible solucion. 
 })
 
-// contador de caracteres 
 
 
 
