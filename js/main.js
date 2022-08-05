@@ -1,28 +1,20 @@
 // Variables 
-const input1 = document.getElementById("pregunta1");
-const input2 = document.getElementById("pregunta2");
-const input3 = document.getElementById("pregunta3");
-const resp1 = document.getElementById("respuesta1");
-const resp2 = document.getElementById("respuesta2");
-const resp3 = document.getElementById("respuesta3");
+
 const btn = document.getElementById("btn");
 const div3 = document.getElementById("div3");
 const btnReset = document.getElementById("btnReset");
 const form2 = document.getElementById("form2");
+const input = document.getElementsByClassName("input");
+const resp = document.getElementsByClassName("resp");
+
 
 // Se traslada el texto introducido en los Input(preguntas) hacia los P (respuestas)
 
-input1.addEventListener("change", (e) => {
-    resp1.textContent = e.target.value;
-})
-
-input2.addEventListener("change", (e) => {
-    resp2.textContent = e.target.value;
-})
-
-input3.addEventListener("change", (e) => {
-    resp3.textContent = e.target.value;
-})
+for (let i = 0; i < input.length; i++) {
+    input[i].addEventListener("change" , (e) => {
+    resp[i].textContent = e.target.value;
+    });
+}
 
 // Al realizar click en el boton `Enviar Respuestas` se genera un h3 con un msj de agradecimiento
 
