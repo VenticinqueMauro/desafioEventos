@@ -21,7 +21,7 @@ for (let i = 0; i < input.length; i++) {
 btn.addEventListener("click", () => {
     div3.innerHTML = 
     `
-    <h3 style="font-size:60px; margin-top: 20px; padding:20px;"> Gracias por tus respuestas! </h3>
+    <h3 style="font-size:60px; margin-top: 20px; padding:20px;" class="animate__animated animate__zoomIn"> Gracias por tus respuestas! </h3>
     `
 })
 
@@ -33,6 +33,8 @@ btnReset.addEventListener("click", () => {
     div3.textContent = "";
     window.location.reload() // Si se quita esta funcion, al volver a rellenar los campos ya no se ven reflejados en `respuestas` ya que el codigo solo se ejecuta una sola vez. Por eso considere necesario recargar la web hasta conocer otra posible solucion. 
 })
+
+// contador de caracteres 
 
 
 
